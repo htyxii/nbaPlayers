@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './header';
+import Menu from './menu';
 import Main from './main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -14,6 +15,7 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <Header />
+    <Menu />
     <Main />
   </React.StrictMode>
 );
