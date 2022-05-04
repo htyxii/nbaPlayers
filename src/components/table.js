@@ -1,6 +1,6 @@
 import React from "react";
 // import './App.css';
-class Test extends React.Component {
+class Table extends React.Component {
   // Constructor
   constructor(props) {
     super(props);
@@ -71,4 +71,4 @@ class Test extends React.Component {
   }
 }
 
-export default Test;
+export default Table;
