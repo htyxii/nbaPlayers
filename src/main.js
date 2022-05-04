@@ -1,6 +1,6 @@
 function main() {
   return (
-    <form className="mx-4 mt-5 p-3 border">
+    <form className="mx-5 mt-5 p-3 border">
       <div className="row g-3 align-items-center mb-3 d-flex justify-content-center">
         <div className="col-auto">
           <label for="inputPassword6" class="col-form-label">
