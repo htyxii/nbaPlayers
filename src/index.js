@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import reportWebVitals from './reportWebVitals';
-import Header from './header';
-import Menu from './menu';
-import Main from './main';
-import ShowCharts from './showCharts';
-import Table from './table';
-import Pagination from './pagination';
+import Header from './components/header';
+import Menu from './components/menu';
+import Main from './components/main';
+import ShowCharts from './components/showCharts';
+import Table from './components/table';
+import Pagination from './components/pagination';
+// import App from './app';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
@@ -21,6 +22,7 @@ root.render(
     <Main />
     <ShowCharts />
     <Table />
+    {/* <App /> */}
     <Pagination />
   </React.StrictMode>
 );

@@ -1,11 +1,11 @@
-import logo from "./logo_160.png";
-import avatar from "./avatar.jpg";
+import logo from "../assets/logo_160.png";
+import avatar from "../assets/avatar.jpg";
 
 function header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href=".">
           <img src={logo} alt=""></img>
         </a>
         <span className="navbar-text">
