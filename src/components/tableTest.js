@@ -6,7 +6,7 @@ const DatatablePageTest = () => {
     columns: [
       {
         label: 'Team',
-        field: 'team_name',
+        field: 'team_acronym',
         sort: 'asc',
         width: 150
       },
