@@ -8,7 +8,6 @@ import Main from './components/main';
 import ShowCharts from './components/showCharts';
 import Table from './components/table';
 import Pagination from './components/pagination';
-import JsonDataDisplay from './components/table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
@@ -21,7 +20,7 @@ root.render(
     <Menu />
     <Main />
     <ShowCharts />
-    <JsonDataDisplay />
+    <Table />
     <Pagination />
   </React.StrictMode>
 );
