@@ -29,7 +29,6 @@ function main() {
           ></input>
         </div>
       </div>
-
       <div className="col-auto d-flex justify-content-center">
         <button type="submit" className="btn btn-lg btn-secondary mt-5">
           Search

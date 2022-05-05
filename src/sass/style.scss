@@ -10,5 +10,6 @@ $spacers: (
 
 
 .dataTables_wrapper {
-  margin: $spacer * 3;
+  margin-left: $spacer * 3;
+  margin-right: $spacer * 3;
 }

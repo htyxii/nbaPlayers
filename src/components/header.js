@@ -1,5 +1,5 @@
 import logo from "../assets/logo_160.png";
-import avatar from "../assets/avatar.jpg";
+import avatar from "../assets/avatar.png";
 
 function header() {
   return (
