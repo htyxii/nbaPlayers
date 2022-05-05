@@ -11360,7 +11360,10 @@ const DatatablePageTest = () => {
     <MDBDataTable
       striped
       bordered
+      hover
       small
+      entriesOptions={[15, 50, 100]}
+      searching={false}
       data={data}
     />
   );
