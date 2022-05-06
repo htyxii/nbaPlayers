@@ -63,7 +63,7 @@ class LocalFileRead extends Component {
           </div>
         </div>
         <div className="col-auto d-flex justify-content-center">
-          <button type="submit" className="btn btn-lg btn-secondary mt-5">
+          <button type="submit" className="btn btn-lg btn-light mt-5">
             Search
           </button>
         </div>

@@ -3,7 +3,7 @@ function header() {
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb bg-dark p-2">
       <a className="navbar-brand" href=".">
-        <li className="breadcrumb-item active ps-5" aria-current="page">
+        <li className="breadcrumb-item active pl-5 text-warning" aria-current="page">
           Player List
         </li>
         </a>
