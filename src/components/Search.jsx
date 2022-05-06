@@ -23,9 +23,16 @@ class LocalFileRead extends Component {
     super(props);
   }
   render() {
+
+    // function handleSubmit(e) {
+    //   e.preventDefault();
+    //   console.log('You clicked submit.');
+    // }
+
+    // onSubmit={handleSubmit}
     
     return (
-      <form className="mx-5 mt-5 p-3 border">
+      <form className="mx-5 mt-5 p-3 border" action="/search">
         <div className="row g-3 align-items-center mb-3 d-flex justify-content-center">
           <div className="col-auto">
             <label for="inputPassword6" class="col-form-label">
@@ -33,16 +40,16 @@ class LocalFileRead extends Component {
             </label>
           </div>
           <div className="col-auto me-5">
-            <select className="form-select" id="inputGroupSelect01">
+            <select className="browser-default custom-select form-select" id="inputGroupSelect01" name="team">
               <option selected>All</option>
               {arrayOrderByTeam.map((item, i) => (
-                <option value={i}>{item.team_name}</option>
+                <option value={item.team_name}>{item.team_name}</option>
               ))}
             </select>
           </div>
           <div className="col-auto">
             <label for="inputPassword6" class="col-form-label">
-              Keywords:
+              Keyword:
             </label>
           </div>
           <div className="col-auto">
@@ -50,6 +57,7 @@ class LocalFileRead extends Component {
               type="text"
               id="inputPassword6"
               className="form-control"
+              name="keyword"
               aria-describedby="passwordHelpInline"
             ></input>
           </div>
