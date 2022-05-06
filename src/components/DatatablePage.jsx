@@ -8,7 +8,7 @@ const DatatablePageTest = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0`)
+    fetch(`http://localhost:9999/all`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
       .then((response) => {
         if (!response.ok) {
           throw new Error(
@@ -34,55 +34,54 @@ const DatatablePageTest = () => {
     columns: [
       {
         label: "Team",
-        field: "team_acronym",
+        field: "Team",
         sort: "disabled",
         width: 150,
       },
       {
         label: "Name",
-        field: "name",
+        field: "Name",
         sort: "disabled",
         width: 270,
       },
       {
         label: "Games",
-        field: "games_played",
+        field: "Games",
         sort: "asc",
         width: 200,
       },
       {
         label: "Points",
-        field: "points_per_game",
+        field: "Points",
         sort: "asc",
         width: 100,
       },
       {
         label: "Rebounds",
-        field: "rebounds_per_game",
+        field: "Rebounds",
         sort: "asc",
         width: 150,
       },
       {
         label: "Assists",
-        field: "assists_per_game",
+        field: "Assists",
         sort: "asc",
         width: 100,
       },
       {
         label: "Steals",
-        field: "steals_per_game",
+        field: "Steals",
         sort: "asc",
         width: 100,
       },
       {
         label: "Blocks",
-        field: "blocks_per_game",
+        field: "Blocks",
         sort: "asc",
         width: 100,
       },
       {
         label: "Detail",
-        field: "name",
         sort: "disabled",
         width: 100,
       },
