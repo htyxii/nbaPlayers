@@ -30,7 +30,7 @@ const DatatablePageTest = () => {
       });
   }, []);
 
-  const dataT = {
+  const tableData = {
     columns: [
       {
         label: "Team",
@@ -98,7 +98,7 @@ const DatatablePageTest = () => {
       small
       entriesOptions={[15, 50, 100]}
       searching={false}
-      data={dataT}
+      data={tableData}
     />
   );
 };
