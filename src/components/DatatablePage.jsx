@@ -38,10 +38,50 @@ const DatatablePageTest = () => {
         .finally(() => {
           setLoading(false);
         });
-        // Filter only team
-    } else if (team !== undefined && keyword === '') {
-      console.log('teamonly')
-      fetch(`http://localhost:9999/search/${team}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
+    } else if (team === "All" && keyword === "") {
+      fetch(`http://localhost:9999/`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              `This is an HTTP error: The status is ${response.status}`
+            );
+          }
+          return response.json();
+        })
+        .then((actualData) => {
+          setData(actualData);
+          setError(null);
+        })
+        .catch((err) => {
+          setError(err.message);
+          setData(null);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    } else if (team !== undefined && keyword === "") {
+      fetch(`http://localhost:9999/search/team/${team}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              `This is an HTTP error: The status is ${response.status}`
+            );
+          }
+          return response.json();
+        })
+        .then((actualData) => {
+          setData(actualData);
+          setError(null);
+        })
+        .catch((err) => {
+          setError(err.message);
+          setData(null);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    } else if (team === "All" && keyword === "") {
+      fetch(`http://localhost:9999/search/${keyword}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
         .then((response) => {
           if (!response.ok) {
             throw new Error(
@@ -62,7 +102,7 @@ const DatatablePageTest = () => {
           setLoading(false);
         });
     } else {
-      fetch(`http://localhost:9999/search?team=${team}&keyword=${keyword}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
+      fetch(`http://localhost:9999/search/${team}/${keyword}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
         .then((response) => {
           if (!response.ok) {
             throw new Error(
