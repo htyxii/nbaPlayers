@@ -80,8 +80,8 @@ const DatatablePageTest = () => {
         .finally(() => {
           setLoading(false);
         });
-    } else if (team === "All" && keyword === "") {
-      fetch(`http://localhost:9999/search/${keyword}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
+    } else if (team === 'All' && keyword !== undefined) {
+      fetch(`http://localhost:9999/search/keywordOnly/${keyword}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
         .then((response) => {
           if (!response.ok) {
             throw new Error(
@@ -101,28 +101,7 @@ const DatatablePageTest = () => {
         .finally(() => {
           setLoading(false);
         });
-    } else {
-      fetch(`http://localhost:9999/search/${team}/${keyword}`) // https://mocki.io/v1/c0e8fc0e-bbd3-42e7-a2fb-4f42c775d8c0
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(
-              `This is an HTTP error: The status is ${response.status}`
-            );
-          }
-          return response.json();
-        })
-        .then((actualData) => {
-          setData(actualData);
-          setError(null);
-        })
-        .catch((err) => {
-          setError(err.message);
-          setData(null);
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    }
+    } 
   }, []);
 
   const tableData = {
