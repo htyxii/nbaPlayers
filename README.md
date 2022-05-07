@@ -1,5 +1,23 @@
 # LnData Web Engineer Pre-Test
 
+## 程式說明: NBA球員查詢系統
+
+1. 能夠瀏覽所有球員資料 (比賽場數、平均得分等)。
+2. 表格可依不同欄位排序，並可切換正序、倒序，預設以Points欄位排序(未完成)，最高的在最前面，資料預設為顯示全部球員名單。
+3. 按下「Search」按鈕後依照搜尋條件顯示符合條件的資料於表格中。
+4. 表格需有分頁功能，預設每頁顯示 15 筆資料，可選擇 1 頁顯示 15筆 / 50筆 / 100筆資料。
+5. 未完成: 按下每筆資料的 Detail 圖示，會跳至另一頁面顯示該球員的所有詳細資料，如以下示意圖，顯示的欄位名稱與資料key值對應關係請參閱下方對應表。
+6. 未完成: 按下「SHOW CHART」按鈕後，會跳出視窗，以圓餅圖或柱狀圖(或是其他形式的圖表)，顯示球員人數在15人以下(含15人)的球隊每支球隊的人數統計資料。
+
+## 安裝說明 (包含 https://github.com/htyxii/nbaPlayersNodeJs)
+
+1. 匯入 nba.sql
+2. Node.js 執行 importData.js 將 player.json 資料匯入players資料庫中
+3. 執行 nodemon server.js
+4. React App: nbaPlayers 路徑下 npm run start
+5. 網頁連線至 http://localhost:3000/
+6. 完成
+
 ## Task說明
 players.json內為nba球員名單，請以此份資料，依照以下系統需求完成NBA球員查詢系統。
 
@@ -72,3 +90,5 @@ EX.頁面上的「Team」欄位請顯示json資料中的team_acronym ...，以�
 ----
 project完成後請將project及相關文件打包寄至 rick.chen@lndata.com<br>
 Please send back your project and document to rick.chen@lndata.com
+
+
