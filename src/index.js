@@ -5,8 +5,10 @@ import "./sass/style.scss";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Search from "./components/Search";
-import ChartButton from "./components/ChartButton";
+import Chart from "./components/Chart";
 import DatatablePage from "./components/DatatablePage";
+
+
 
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.js";
@@ -19,7 +21,7 @@ root.render(
     <Header />
     <Menu />
     <Search />
-    <ChartButton />
+    <Chart />
     <DatatablePage />
   </React.StrictMode>
 );
