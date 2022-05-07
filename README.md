@@ -1,5 +1,9 @@
 # LnData Web Engineer Pre-Test
 
+## 程式預覽
+
+影片: https://www.youtube.com/watch?v=cCanyJ2htqs
+
 ## 程式說明: NBA球員查詢系統
 
 1. 能夠瀏覽所有球員資料 (比賽場數、平均得分等)。
