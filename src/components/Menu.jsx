@@ -5,7 +5,6 @@ function header() {
       <a className="navbar-brand" href=".">
         <li className="breadcrumb-item active pl-4 text-warning" aria-current="page">
           <button className="btn btn-dark text-warning">Player List</button>
-          
         </li>
         </a>
       </ol>

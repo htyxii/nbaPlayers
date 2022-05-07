@@ -12,6 +12,8 @@ import "mdbreact/dist/css/mdb.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Search from "./components/Search";
 
+import NewSearch from "./components/NewSearch"
+
 import DatatablePage from "./components/DatatablePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,6 +22,7 @@ root.render(
     <Header />
     <Menu />
     <Search />
+    {/* <NewSearch /> */}
     <ShowCharts />
     {/* <TableNew /> */}
     {/* <DatatablePageTest /> */}

@@ -43,7 +43,7 @@ class LocalFileRead extends Component {
             <select className="browser-default custom-select form-select" id="inputGroupSelect01" name="team">
               <option selected>All</option>
               {arrayOrderByTeam.map((item, i) => (
-                <option value={item.team_name}>{item.team_name}</option>
+                <option value={item.team_acronym}>{item.team_acronym}</option>
               ))}
             </select>
           </div>
